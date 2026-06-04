@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Iftikhar — Mobile App Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">AI<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:ahmediftikharsheikh401@gmail.com" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name reveal-up" style="--d:0.1s">
+        <span class="name-line">Ahmed</span>
+        <span class="name-line accent-line">Iftikhar</span>
+      </h1>
+      <p class="hero-role reveal-up" style="--d:0.2s">
+        <span class="role-text" id="role-text"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc reveal-up" style="--d:0.3s">
+        Building scalable, high-performance Android applications with a focus on clean architecture, real-time features, and exceptional user experiences.
+      </p>
+      <div class="hero-actions reveal-up" style="--d:0.4s">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-stats reveal-up" style="--d:0.5s">
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="12">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="8">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="phone-status-bar">
+              <span>9:41</span>
+              <div class="phone-icons">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12"><path d="M1 1l22 22M16.72 11.06A10.94 10.94 0 0019 12.55M5 12.55a10.94 10.94 0 015.17-2.39M10.71 5.05A16 16 0 0122.56 9M1.42 9a15.91 15.91 0 014.7-2.88M8.53 16.11a6 6 0 016.95 0M12 20h.01"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+              </div>
+            </div>
+            <div class="app-ui">
+              <div class="app-header">
+                <div class="app-avatar"></div>
+                <div class="app-greeting">
+                  <div class="app-line short"></div>
+                  <div class="app-line long"></div>
+                </div>
+              </div>
+              <div class="app-card card-purple">
+                <div class="card-icon">♪</div>
+                <div class="card-title">Echo Play</div>
+                <div class="card-sub">Now Playing</div>
+              </div>
+              <div class="app-row">
+                <div class="mini-card"></div>
+                <div class="mini-card"></div>
+              </div>
+              <div class="app-list">
+                <div class="list-item"></div>
+                <div class="list-item"></div>
+                <div class="list-item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-glow"></div>
+      </div>
+      <div class="floating-tag tag-1">
+        <span>Kotlin</span>
+      </div>
+      <div class="floating-tag tag-2">
+        <span>MVVM</span>
+      </div>
+      <div class="floating-tag tag-3">
+        <span>Firebase</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label reveal-up">About Me</div>
+          <h2 class="section-title reveal-up" style="--d:0.1s">Crafting apps that <em>people love</em> to use</h2>
+          <p class="about-body reveal-up" style="--d:0.2s">
+            I'm Ahmed Iftikhar — an Android Developer with over 3 years of hands-on experience building production-grade mobile applications. Currently working at <strong>Bitrixon</strong>, a Saudi-based company, where I lead development of complex features including WebRTC-powered real-time calling, live streaming, food delivery, and hotel booking modules.
+          </p>
+          <p class="about-body reveal-up" style="--d:0.25s">
+            My journey started in university, where I spent a year mastering Android before jumping into freelance work — delivering everything from screen recording tools to full-stack social media platforms. I hold a BS in Artificial Intelligence from SMI University and am a proud <strong>Hafiz e Quran</strong>.
+          </p>
+          <div class="about-badges reveal-up" style="--d:0.3s">
+            <div class="about-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.5 1.18 2 2 0 012.48.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.28a16 16 0 006.72 6.72l1.83-1.83a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              Open to Remote
+            </div>
+            <div class="about-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Karachi, Pakistan
+            </div>
+            <div class="about-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              BS AI — SMI University
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal-right" style="--d:0.2s">
+          <div class="about-card glass">
+            <div class="ac-header">
+              <div class="ac-dot green"></div>
+              <div class="ac-dot yellow"></div>
+              <div class="ac-dot red"></div>
+            </div>
+            <pre class="ac-code"><span class="c-keyword">val</span> ahmed = Developer(
+  name = <span class="c-string">"Ahmed Iftikhar"</span>,
+  role = <span class="c-string">"Android Developer"</span>,
+  company = <span class="c-string">"Bitrixon"</span>,
+  experience = <span class="c-num">3</span>,
+  skills = listOf(
+    <span class="c-string">"Kotlin"</span>, <span class="c-string">"Java"</span>,
+    <span class="c-string">"MVVM"</span>, <span class="c-string">"Jetpack"</span>,
+    <span class="c-string">"Firebase"</span>, <span class="c-string">"WebRTC"</span>,
+    <span class="c-string">"Node.js"</span>, <span class="c-string">"MongoDB"</span>
+  ),
+  status = <span class="c-string">"Open to Work"</span> ✓
+)</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section section" id="skills">
+    <div class="container">
+      <div class="section-label reveal-up">Technical Skills</div>
+      <h2 class="section-title reveal-up" style="--d:0.1s">Tools & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-category glass reveal-up" style="--d:0.1s">
+          <div class="skill-cat-icon">📱</div>
+          <h3>Android Development</h3>
+          <div class="skill-tags">
+            <span>Kotlin</span><span>Java</span><span>Jetpack Compose</span>
+            <span>MVVM</span><span>Dagger Hilt</span><span>Android SDK</span>
+            <span>Background Services</span><span>Push Notifications</span>
+          </div>
+        </div>
+        <div class="skill-category glass reveal-up" style="--d:0.15s">
+          <div class="skill-cat-icon">🔥</div>
+          <h3>Real-time & Cloud</h3>
+          <div class="skill-tags">
+            <span>WebRTC</span><span>Firebase Auth</span><span>Firestore</span>
+            <span>Realtime DB</span><span>REST APIs</span><span>Media Playback</span>
+            <span>Live Streaming</span><span>Audio/Video Calls</span>
+          </div>
+        </div>
+        <div class="skill-category glass reveal-up" style="--d:0.2s">
+          <div class="skill-cat-icon">⚙️</div>
+          <h3>Backend & Database</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>NestJS</span><span>MongoDB</span>
+            <span>RESTful APIs</span><span>Auth Systems</span>
+            <span>DB Design</span><span>Server Architecture</span>
+          </div>
+        </div>
+        <div class="skill-category glass reveal-up" style="--d:0.25s">
+          <div class="skill-cat-icon">🛠️</div>
+          <h3>Dev Tools & Practices</h3>
+          <div class="skill-tags">
+            <span>GitHub</span><span>Git</span><span>Dependency Injection</span>
+            <span>Clean Architecture</span><span>Custom UI/UX</span>
+            <span>Agile</span><span>Code Review</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience-section section" id="experience">
+    <div class="container">
+      <div class="section-label reveal-up">Career</div>
+      <h2 class="section-title reveal-up" style="--d:0.1s">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal-up" style="--d:0.1s">
+          <div class="tl-dot"></div>
+          <div class="tl-connector"></div>
+          <div class="tl-content glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Android Developer</h3>
+                <p class="tl-company">Bitrixon <span class="tl-location">· Saudi Arabia (Remote)</span></p>
+              </div>
+              <span class="tl-date">2025 — Present</span>
+            </div>
+            <ul class="tl-list">
+              <li>Developed and maintained complex Android applications using Kotlin and Java with MVVM architecture.</li>
+              <li>Built a full-featured social media app with WebRTC-powered audio/video calling and live streaming capabilities.</li>
+              <li>Implemented food delivery and hotel booking service modules with custom UI components.</li>
+              <li>Integrated Firebase services, REST APIs, and real-time database for scalable backend communication.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Kotlin</span><span>WebRTC</span><span>Firebase</span><span>MVVM</span><span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" style="--d:0.2s">
+          <div class="tl-dot"></div>
+          <div class="tl-connector"></div>
+          <div class="tl-content glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Freelance Android Developer</h3>
+                <p class="tl-company">Self-Employed <span class="tl-location">· Remote</span></p>
+              </div>
+              <span class="tl-date">2021 — 2026</span>
+            </div>
+            <ul class="tl-list">
+              <li>Delivered 10+ production-grade Android applications for clients across various domains.</li>
+              <li>Built screen casting, screen recording, and social media apps from concept to Play Store deployment.</li>
+              <li>Managed full project lifecycle — requirements gathering, development, testing, and client delivery.</li>
+              <li>Developed backend services in Node.js to support mobile applications.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Android</span><span>Java</span><span>Node.js</span><span>MongoDB</span><span>Client Work</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" style="--d:0.3s">
+          <div class="tl-dot"></div>
+          <div class="tl-content glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">BS Artificial Intelligence</h3>
+                <p class="tl-company">SMI University <span class="tl-location">· 7th Semester</span></p>
+              </div>
+              <span class="tl-date">2021 — Present</span>
+            </div>
+            <ul class="tl-list">
+              <li>Pursuing Bachelor's in AI while working professionally — balancing academics with real-world engineering.</li>
+              <li>Applying AI/ML knowledge to mobile development projects, including the PDF Summarizer using Gemini API.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>AI/ML</span><span>Computer Vision</span><span>Python</span><span>Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section section" id="projects">
+    <div class="container">
+      <div class="section-label reveal-up">Portfolio</div>
+      <h2 class="section-title reveal-up" style="--d:0.1s">Featured Projects</h2>
+      <p class="section-sub reveal-up" style="--d:0.15s">A selection of real-world applications built and shipped.</p>
+
+      <div class="projects-carousel-wrapper reveal-up" style="--d:0.2s">
+        <div class="projects-carousel" id="carousel">
+
+          <div class="project-card glass">
+            <div class="pc-accent" style="background: linear-gradient(135deg, #a855f7, #6366f1)"></div>
+            <div class="pc-header">
+              <div class="pc-icon" style="background: linear-gradient(135deg, #a855f7, #6366f1)">♪</div>
+              <div class="pc-links">
+                <a href="https://github.com/AhmedIftikhar02/EchoPlay" target="_blank" class="pc-link" title="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="pc-title">Echo Play</h3>
+            <p class="pc-desc">A feature-rich offline music player with custom playlist management, equalizer controls, and beautiful personalized themes. Designed for a seamless listening experience without needing internet connectivity.</p>
+            <div class="pc-tags">
+              <span>Kotlin</span><span>Media Player</span><span>Custom UI</span><span>Offline</span>
+            </div>
+          </div>
+
+          <div class="project-card glass">
+            <div class="pc-accent" style="background: linear-gradient(135deg, #06b6d4, #0ea5e9)"></div>
+            <div class="pc-header">
+              <div class="pc-icon" style="background: linear-gradient(135deg, #06b6d4, #0ea5e9)">📱</div>
+              <div class="pc-links">
+                <a href="https://www.linkedin.com/posts/ahmed-iftikhar-7aa0332b9_screencast-screenmirroring-androidapp-activity-7230659079247917057--mAq" target="_blank" class="pc-link" title="LinkedIn Demo">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="pc-title">Screen Cast App</h3>
+            <p class="pc-desc">Cast and mirror your Android screen to smart TVs and other devices wirelessly. Built with optimized low-latency protocols to deliver smooth, real-time video streaming for presentations and entertainment.</p>
+            <div class="pc-tags">
+              <span>Screen Mirroring</span><span>Streaming</span><span>WebRTC</span><span>Kotlin</span>
+            </div>
+          </div>
+
+          <div class="project-card glass">
+            <div class="pc-accent" style="background: linear-gradient(135deg, #f97316, #ef4444)"></div>
+            <div class="pc-header">
+              <div class="pc-icon" style="background: linear-gradient(135deg, #f97316, #ef4444)">🔒</div>
+              <div class="pc-links">
+                <a href="https://drive.google.com/drive/folders/1fE6o8pTLu_yKU3igqIB0J1nDpJA7T2LH" target="_blank" class="pc-link" title="Drive">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="pc-title">Safe Lock</h3>
+            <p class="pc-desc">A robust app locker with biometric authentication, PIN/pattern protection, and an intruder selfie feature. Protect any app on your device with military-grade security and a clean, intuitive interface.</p>
+            <div class="pc-tags">
+              <span>Security</span><span>Biometrics</span><span>Kotlin</span><span>Background Service</span>
+            </div>
+          </div>
+
+          <div class="project-card glass">
+            <div class="pc-accent" style="background: linear-gradient(135deg, #10b981, #059669)"></div>
+            <div class="pc-header">
+              <div class="pc-icon" style="background: linear-gradient(135deg, #10b981, #059669)">📄</div>
+              <div class="pc-links">
+                <a href="https://github.com/AhmedIftikhar02/ILovePDF" target="_blank" class="pc-link" title="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="pc-title">PDF Summarizer</h3>
+            <p class="pc-desc">An AI-powered document analysis app using Google's Gemini API to extract key insights and generate concise summaries from any PDF. Ideal for students and professionals dealing with large documents.</p>
+            <div class="pc-tags">
+              <span>Gemini AI</span><span>PDF Parsing</span><span>Kotlin</span><span>AI Integration</span>
+            </div>
+          </div>
+
+          <div class="project-card glass">
+            <div class="pc-accent" style="background: linear-gradient(135deg, #f59e0b, #d97706)"></div>
+            <div class="pc-header">
+              <div class="pc-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706)">🛒</div>
+              <div class="pc-links">
+                <a href="https://github.com/AhmedIftikhar02/E-Commerce-App" target="_blank" class="pc-link" title="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="pc-title">E-Commerce App</h3>
+            <p class="pc-desc">Full-stack watches e-commerce platform with complete admin and user panels. Features product management, cart system, real-time order tracking, and a Node.js + MongoDB backend powering the entire ecosystem.</p>
+            <div class="pc-tags">
+              <span>Full Stack</span><span>Node.js</span><span>MongoDB</span><span>Admin Panel</span>
+            </div>
+          </div>
+
+          <div class="project-card glass">
+            <div class="pc-accent" style="background: linear-gradient(135deg, #ec4899, #8b5cf6)"></div>
+            <div class="pc-header">
+              <div class="pc-icon" style="background: linear-gradient(135deg, #ec4899, #8b5cf6)">🌐</div>
+              <div class="pc-links">
+                
+              </div>
+            </div>
+            <h3 class="pc-title">Social Media App</h3>
+            <p class="pc-desc">A complete Instagram-like social platform featuring short reels, real-time chat, audio/video calling, live streams, and integrated hotel & restaurant booking services. Built with WebRTC and Firebase for scale.</p>
+            <div class="pc-tags">
+              <span>WebRTC</span><span>Reels</span><span>Live Streaming</span><span>Firebase</span>
+            </div>
+          </div>
+
+          <div class="project-card glass">
+            <div class="pc-accent" style="background: linear-gradient(135deg, #64748b, #475569)"></div>
+            <div class="pc-header">
+              <div class="pc-icon" style="background: linear-gradient(135deg, #64748b, #475569)">📹</div>
+              <div class="pc-links">
+                <a href="#" class="pc-link" title="Coming Soon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="pc-title">Screen Recorder</h3>
+            <p class="pc-desc">A high-performance screen recording app with internal audio capture, floating controls, video trimming, and direct sharing options. Records in HD with minimal battery and performance impact on the host device.</p>
+            <div class="pc-tags">
+              <span>Media Projection</span><span>Background Service</span><span>Kotlin</span><span>Video</span>
+            </div>
+          </div>
+
+          <div class="project-card glass">
+            <div class="pc-accent" style="background: linear-gradient(135deg, #0891b2, #0e7490)"></div>
+            <div class="pc-header">
+              <div class="pc-icon" style="background: linear-gradient(135deg, #0891b2, #0e7490)">💬</div>
+              <div class="pc-links">
+                <a href="#" class="pc-link" title="Private Project">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="pc-title">Chatting & Calling App</h3>
+            <p class="pc-desc">A Telegram-like messaging app with end-to-end encrypted chats, group messaging, voice and video calls using WebRTC, media sharing, read receipts, and push notifications for seamless communication.</p>
+            <div class="pc-tags">
+              <span>WebRTC</span><span>Encryption</span><span>Firebase</span><span>Real-time</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="prev-btn" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button class="carousel-btn next" id="next-btn" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="section-label reveal-up">Get In Touch</div>
+          <h2 class="section-title reveal-up" style="--d:0.1s">Let's build something <em>great</em> together</h2>
+          <p class="contact-desc reveal-up" style="--d:0.2s">
+            Whether you have a project in mind, want to collaborate, or just want to say hello — my inbox is always open.
+          </p>
+          <div class="contact-links reveal-up" style="--d:0.3s">
+            <a href="mailto:ahmediftikharsheikh401@gmail.com" class="contact-link glass">
+              <div class="cl-icon email-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="cl-info">
+                <span class="cl-label">Email</span>
+                <span class="cl-value">ahmediftikharsheikh401@gmail.com</span>
+              </div>
+              <svg class="cl-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ahmed-iftikhar-7aa0332b9" target="_blank" class="contact-link glass">
+              <div class="cl-icon linkedin-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="cl-info">
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-value">ahmed-iftikhar-7aa0332b9</span>
+              </div>
+              <svg class="cl-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+
+            <a href="https://github.com/AhmedIftikhar02" target="_blank" class="contact-link glass">
+              <div class="cl-icon github-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="cl-info">
+                <span class="cl-label">GitHub</span>
+                <span class="cl-value">AhmedIftikhar02</span>
+              </div>
+              <svg class="cl-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+
+            <a href="tel:+923302085576" class="contact-link glass">
+              <div class="cl-icon phone-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.5 1.18 2 2 0 012.48.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.28a16 16 0 006.72 6.72l1.83-1.83a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div class="cl-info">
+                <span class="cl-label">Phone</span>
+                <span class="cl-value">+92 330 2085576</span>
+              </div>
+              <svg class="cl-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right reveal-right" style="--d:0.2s">
+          <div class="contact-form glass">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" id="fname" placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="femail" placeholder="youremail@example.com" />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea id="fmsg" rows="4" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button class="btn btn-primary full-width" id="send-btn">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">AI<span>.</span></div>
+        <p class="footer-copy">© 2026 Ahmed Iftikhar.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/AhmedIftikhar02" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ahmed-iftikhar-7aa0332b9" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:ahmediftikharsheikh401@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

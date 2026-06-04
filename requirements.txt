@@ -1,0 +1,31 @@
+# Requirements & Tech Stack
+# Ahmed Iftikhar — Portfolio Website
+
+## Runtime Requirements
+# No server, no build tools, no Node.js required
+# Open index.html directly in any modern browser
+
+## Languages & Technologies Used
+HTML5
+CSS3 (Custom Properties, Grid, Flexbox, Animations, Backdrop Filter)
+JavaScript (ES6+, Intersection Observer API, requestAnimationFrame)
+
+## External Resources (CDN — requires internet connection)
+Google Fonts:
+  - Syne (https://fonts.google.com/specimen/Syne)
+  - DM Sans (https://fonts.google.com/specimen/DM+Sans)
+
+## Optional Development Tools (not required)
+VS Code                    # Code editor
+Live Server (VS Code ext)  # Local dev server for hot reload
+Git                        # Version control
+GitHub Pages               # Free hosting
+
+## Recommended Git Version
+git >= 2.x
+
+## Tested On
+Chrome  >= 90
+Firefox >= 88
+Safari  >= 14
+Edge    >= 90
